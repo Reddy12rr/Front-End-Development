@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic HTML Registration Form</title>
+    <style>
+        body {
+            background-color: #f5fafa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 20px;
+            color: #444;
+        }
+
+        form {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 35px 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        form label {
+            display: block;
+            margin: 20px 0 8px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form input[type="date"],
+        form input[type="password"],
+        form select,
+        form textarea,
+        form input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 4px;
+            border: 1px solid #ccd6dd;
+            border-radius: 6px;
+            background-color: #fdfdfd;
+            box-sizing: border-box;
+            font-size: 15px;
+            transition: border-color 0.3s;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus,
+        form input[type="tel"]:focus,
+        form input[type="date"]:focus,
+        form input[type="password"]:focus,
+        form select:focus,
+        form textarea:focus {
+            border-color: #1976d2;
+            outline: none;
+        }
+
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        form textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        form input[type="submit"],
+        form input[type="reset"] {
+            background-color: #1976d2;
+            color: #fff;
+            padding: 12px 30px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover,
+        form input[type="reset"]:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+    <header>Basic HTML Student Registration Form</header>
+    <p>Please fill out all the required information accurately.</p>
+
+    <form action="/Session4.html" method="get">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch">
+            <option value="CSE">CSE</option>
+            <option value="CSM">CSM</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+        </select>
+
+        <label>Languages you know:</label>
+        <label><input type="checkbox" name="languages_known" value="telugu"> Telugu</label>
+        <label><input type="checkbox" name="languages_known" value="hindi"> Hindi</label>
+        <label><input type="checkbox" name="languages_known" value="english"> English</label>
+        <label><input type="checkbox" name="languages_known" value="kannada"> Kannada</label>
+
+        <label for="resume">Upload your resume:</label> 
+        <input type="file" id="resume" name="resume">
+
+        <label for="e-mail">E-mail:</label>
+        <input type="email" id="e-mail" name="e-mail">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="cpassword">Confirm Password:</label>
+        <input type="password" id="cpassword" name="cpassword">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

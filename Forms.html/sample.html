@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASICS</title>
+    <style>
+   /* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f7;
+    margin: 5;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Label and input layout */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+/* Submit and Reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #5a6268;
+}
+</style>
+
+</head>
+<body>
+    <div>
+    <h1>Student Details:</h1>
+    <label for="name">Name</label>
+    <input type="text" name="name"><br><br>
+    <label for="hallticket no">Hallticket No:</label>
+    <input type="text" name="hallticket no"><br><br>
+    <label for="Year">Year</label>
+    <select id="year" name="year">
+    <option value="1st year">1st year</option>
+    <option value="2nd year">2nd year</option>
+    <option value="3rd year">3rd year</option>
+    <option value="4th year">4th year</option>
+   </select> <br><br>
+   <label for="branch">Branch</label>
+   <select id="branch" name="branch">
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="CSM">CSM</option>
+    <option value="EEE">EEE</option>
+    <option value="MECH">MECH</option>
+    <option value="CIVIL">CIVIL</option>
+   </select><br><br>
+   <label >Gender:</label>
+   <label> <input type="radio" name="gender" value="male">Male</label>
+   <label> <input type="radio" namr="gender" value="female">Female</label>
+   <br><br>
+   <label>Languages_known:</label>
+   <label><input type="checkbox"  value="telugu"> Telugu</label>
+   <label><input type="checkbox"   value="english">English</label>
+   <label><input type="checkbox" value="kannada">Kannada</label>   
+   <label><input type="checkbox"  value="hindi">Hindi</label>
+   <br><br>
+   <label for="resume">Upload your resume:</label>
+   <input type="file" id="resume" name="resume"><br><br>
+   <h2>Contact:</h2>
+   <label for="e-mail">e-mail</label>
+   <input type="text" id="e-mail" name="e-mail"><br><br>
+   <label for="phone">phone</label>
+  <input type="tel" min="0" maxlength="10" id="phone" name="phone"><br><br>
+<label for="password">Password</label>
+<input type="password" id="password" name="password">
+<label for="cpassword">Conform Password</label>
+<input type="password" cpassword="pasword" id="cpassword" name="cpassword"><br><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</div>
+</body>
+</html>
